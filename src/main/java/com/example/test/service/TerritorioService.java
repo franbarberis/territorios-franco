@@ -17,4 +17,8 @@ public class TerritorioService {
     public Territorio findById(Long id) {
         return territorioRepository.findById(id).orElse(null);
     }
+
+    public void save(Territorio territorio) {
+        territorioRepository.save(territorio);
+    }
 }
